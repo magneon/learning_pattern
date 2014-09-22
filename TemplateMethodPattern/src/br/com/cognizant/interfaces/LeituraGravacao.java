@@ -12,6 +12,8 @@ import java.io.File;
 public abstract class LeituraGravacao {
 	protected String path;
 	
+	protected String dadosParaGravacao;
+	
 	protected File arquivoParaLeitura;
 	
 	protected File arquivoParaGravacao;
@@ -43,7 +45,7 @@ public abstract class LeituraGravacao {
 	
 	protected abstract void lerArquivo();
 	
-	protected abstract void gravarDadosNaSaida(final File arquivoParaGravacao);
+	protected abstract void gravarDadosNaSaida();
 	
 	public final void setArquivoParaLeitura(File arquivoParaLeitura) {
 		this.arquivoParaLeitura = arquivoParaLeitura;
